@@ -1,0 +1,9 @@
+services:
+  # Stress Test
+  stress-test:
+    container_name: stress-test
+    restart: "no"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: stress-test
